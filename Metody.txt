@@ -1,0 +1,62 @@
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+let a = 8;
+let mojePole = [10, 20, 30, 40, 50];
+let hledanyPrvek = 30;
+
+
+
+//funkce 1 Zjisteni, zda je prvek v poli
+function prvekvpoli(pole, hledanyPrvek) {
+    if (pole.includes(hledanyPrvek))
+        return "Prvek je v poli";
+    else
+        return "Prvek není v poli";
+}
+console.log("Pole ve kterem hledame: "+ mojePole)
+console.log("Prvek který hledáme: "+ hledanyPrvek)
+console.log(prvekvpoli(mojePole, hledanyPrvek));
+console.log("--------------")
+
+// funkce 2 Lichost
+function Lichost(a) {
+    if (a % 2 === 1)
+        return "Èíslo je liché";
+    else
+        return "Èíslo je sudé";
+}
+console.log("Èíslo které ovìøujeme: "+ a)
+console.log(Lichost(a));
+console.log("--------------")
+//funkce 3 - Prumer z 5 cisel
+function vypocetPrumeru(cislo1, cislo2, cislo3, cislo4, cislo5) {
+    let soucet = cislo1 + cislo2 + cislo3 + cislo4 + cislo5;
+    let prumer = soucet / 5;
+    return prumer;
+}
+
+let cislo1 = 10;
+let cislo2 = 20;
+let cislo3 = 30;
+let cislo4 = 40;
+let cislo5 = 50;
+
+let prumer = vypocetPrumeru(cislo1, cislo2, cislo3, cislo4, cislo5);
+console.log("Èísla: "+ cislo1, cislo2, cislo3, cislo4, cislo5)
+console.log("Prùmìr èísel je:", prumer);
+console.log("--------------")
+
+// funkce 4 Odmocnina
+function odmocnina(a) {
+    if (a < 0) {
+        return "Odmocnina ze zaporneho cisla nejde";
+    } else {
+        return a ** 0.5;
+    }
+}
+
+let cisloProOdmocninu = 16;
+let vysledek = odmocnina(cisloProOdmocninu);
+console.log("Odmocnina z", cisloProOdmocninu, "je", vysledek);
+console.log("--------------------")
